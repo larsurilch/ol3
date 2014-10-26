@@ -4,8 +4,8 @@ Esse projeto faz parte da série sobre OpenLayers 3 do blog CodeGeo (http://www.
 
 ### Parte 1
 
-Criação de um mapa simples com alguns controles no OL3
+Criação de um mapa simples com alguns controles no OL3.
 
 ### Parte 2
 
-Visualizando camadas através de uma Layer Switcher no OL3
+Visualizando camadas através de uma Layer Switcher no OL3.
