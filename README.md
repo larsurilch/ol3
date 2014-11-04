@@ -9,3 +9,7 @@ Criação de um mapa simples com alguns controles no OL3.
 ### Parte 2
 
 Visualizando camadas através de uma Layer Switcher no OL3.
+
+### Parte 3
+
+Utilizando o Geolocation no OL3.
