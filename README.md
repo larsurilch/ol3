@@ -13,3 +13,7 @@ Visualizando camadas através de uma Layer Switcher no OL3.
 ### Parte 3
 
 Utilizando o Geolocation no OL3.
+
+### Parte 4
+
+Criando estilos e popups no OL3.
