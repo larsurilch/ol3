@@ -17,3 +17,7 @@ Utilizando o Geolocation no OL3.
 ### Parte 4
 
 Criando estilos e popups no OL3.
+
+### Parte 5
+
+Adicionando ferramentas de desenho e apagar ponto no OL3.
