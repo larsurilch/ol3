@@ -21,3 +21,7 @@ Criando estilos e popups no OL3.
 ### Parte 5
 
 Adicionando ferramentas de desenho e apagar ponto no OL3.
+
+### Parte 6
+
+Inserindo ponto no mapa através da digitação de coordenadas em campos texto.

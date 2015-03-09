@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+#mapa {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+#bar, #coordinates, #inputs {
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	padding: 12px;
+	margin: 10px 0 0 55px;
+	border-radius: 4px;
+	font-size: 13px;
+}
+
+#bar > p, #inputs > button {
+	padding: 6px 12px;
+	display: inline-block;
+	color: #fff;
+	border-radius: 4px;
+	background-color: #5cb85c;
+	border: 1px solid #4cae4c;
+	cursor: pointer;
+}
+
+#bar > p:hover, #bar > p.active {
+	background-color: #449d44;
+	border-color: #398439;
+}
+
+#coordinates {
+	margin-top: 75px;
+}
+
+#inputs {
+	margin-left: 275px;
+}
+
+#inputs > input[type="text"] {
+	border: 1px solid #bbb;
+	padding: 7px;
+	border-radius: 4px;
+}
+
+#inputs > button {
+	background-color: #337ab7;
+	border: 1px solid #2e6da4;
+}
+
+#inputs > button:hover {
+	background-color: #286090;
+	border: 1px solid #204d74;
+}
