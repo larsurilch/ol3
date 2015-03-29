@@ -25,3 +25,7 @@ Adicionando ferramentas de desenho e apagar ponto no OL3.
 ### Parte 6
 
 Inserindo ponto no mapa através da digitação de coordenadas em campos texto.
+
+### Parte 7
+
+Adicionando ferramentas de desenho, edição e remoção de linhas no OL3.
