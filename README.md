@@ -33,3 +33,7 @@ Adicionando ferramentas de desenho, edição e remoção de linhas no OL3.
 ### Parte 8
 
 Exibindo uma camada WMS a partir de informações digitadas pelo usuário. Solicitação feita pelo +felipesanctuss - seguidor do nosso canal no YouTube (https://www.youtube.com/channel/UCt5KilyitTa2X7XiTfHokaA).
+
+### Parte 9
+
+Pesquisando por endereço a partir de informações digitadas pelo usuário. Solicitação feita pelo +Kleber Merklein - seguidor do nosso canal no YouTube (https://www.youtube.com/channel/UCt5KilyitTa2X7XiTfHokaA).

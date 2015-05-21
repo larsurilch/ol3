@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+#mapa {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+#box {
+	margin: 10px 0 0 50px;
+	padding: 5px 10px;
+	position: absolute;
+	z-index: 1;
+	font-size: 12px;
+}
+
+input, button {
+	border: 1px solid #bbb;
+	padding: 5px;
+	background-color: #fff;
+}
+
+button {
+	background-color: #ededed;
+}
