@@ -1,0 +1,106 @@
+#
+# Mapfile - CodeGeo
+#
+
+MAP
+    NAME 'codegeo_wms'
+    IMAGETYPE PNG
+    EXTENT -73.9913940429688 -33.7520141601562 -32.3924560546875 5.27179002761841
+    UNITS meters
+    SIZE 800 600
+    FONTSET '/var/www/codegeo/fonts.list'
+
+#
+# Definição da projeção do mapa
+#
+ 
+    PROJECTION
+        "init=epsg:4326"
+    END
+ 
+#
+# Formato de imagem que utiliza a biblioteca GD
+#
+ 
+    OUTPUTFORMAT
+        NAME "aggpng"
+        DRIVER "AGG/PNG"
+        MIMETYPE "image/png"
+        IMAGEMODE RGBA
+        EXTENSION "png"
+    END
+
+#
+# Definição WEB
+#
+ 
+    WEB
+        TEMPLATE void
+        IMAGEPATH "/var/www/html/codegeo"
+        IMAGEURL "http://localhost/codegeo"
+        METADATA
+            "wms_title" "WMS PNG CodeGeo"
+            "wms_onlineresource" "http://localhost/cgi-bin/mapserv?map=/var/www/codegeo/codegeo.map"
+            "wms_srs" "EPSG:4326 EPSG:900913 EPSG:3857"
+            "wms_abstract" "Serviço WMS PNG CodeGeo."
+            "ows_enable_request" "*"
+            "wms_feature_info_mime_type" "text/html"
+        END
+    END
+
+#
+# Camada de Municípios do Brasil
+#
+  
+    LAYER
+        NAME 'municipios'
+        TYPE POLYGON
+        CONNECTIONTYPE postgis
+        CONNECTION "user=postgres password=1234 dbname=codegeo host=localhost"
+
+        DATA "geom FROM municipios_2010 USING UNIQUE id USING SRID=4326"
+
+        STATUS OFF
+        TRANSPARENCY 75
+        LABELITEM 'nome'
+        LABELCACHE ON
+
+        CLASS
+            NAME 'bahia'
+            EXPRESSION ([estado_id] eq 5)
+            LABEL
+                COLOR 0 0 0
+                FONT droid
+                TYPE TRUETYPE
+                POSITION CC
+                PARTIALS FALSE
+                SIZE 9
+                BUFFER 5
+                OUTLINECOLOR 255 255 255
+            END
+            STYLE
+                OUTLINECOLOR 0 0 0
+                COLOR 241 196 15
+            END
+        END
+
+        CLASS
+            NAME 'padrao'
+            LABEL
+                COLOR 0 0 0
+                FONT droid
+                TYPE TRUETYPE
+                POSITION CC
+                PARTIALS FALSE
+                SIZE 9
+                BUFFER 5
+                OUTLINECOLOR 255 255 255
+            END
+            STYLE
+                OUTLINECOLOR 0 0 0
+                COLOR 41 128 185
+            END
+        END
+    END
+ 
+END
