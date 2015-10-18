@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+#mapa {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+#form {
+	z-index: 2;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 10px;
+	margin: 10px 0 0 55px;
+}
+
+#form > * {
+	padding: 5px;
+}
+
+#form > input {
+	background-color: #fff;
+	border: 1px solid #666;
+}
+
+#pesquisar {
+	background-color: #888;
+	color: #fff;
+	font-weight: bold;
+	border: 1px solid #666;
+}
