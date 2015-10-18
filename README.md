@@ -37,3 +37,7 @@ Exibindo uma camada WMS a partir de informações digitadas pelo usuário. Solic
 ### Parte 9
 
 Pesquisando por endereço a partir de informações digitadas pelo usuário. Solicitação feita pelo +Kleber Merklein - seguidor do nosso canal no YouTube (https://www.youtube.com/channel/UCt5KilyitTa2X7XiTfHokaA).
+
+### Parte 10
+
+Aplicando filtros em uma camada WMS com MapServer. Solicitação feita pelo +Helder soares de menezes - seguidor do nosso canal no YouTube (https://www.youtube.com/channel/UCt5KilyitTa2X7XiTfHokaA).
